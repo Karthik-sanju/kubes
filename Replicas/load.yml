@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: devops-rc
+spec:
+    type: LoadBalancer
+    selector: 
+      env: dev
+    ports:
+      - port: 80
+        targetPort: 80
